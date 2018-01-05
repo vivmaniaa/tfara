@@ -1,0 +1,407 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------loading page styling-------------------------*/
+
+div#load_screen{
+  background: #000;
+  opacity: 1;
+  position: fixed;
+  z-index:1001;
+  top: 0px;
+  font-size: 11vw;
+
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+div#load_screen > div#loading{
+  display: table-cell;
+  vertical-align: middle;
+  color:#FFF;
+  /*width:40%;*/
+  height:24px;
+  margin: 300px auto;
+}
+
+
+/*loading circle*/
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #000;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+.loader {
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #000;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*loading circle ends*/
+
+/*-------------loading page styling ends here-----------------*/
+
+ .dark {
+ 	background-color: #cccccc;
+ 	width: 100%; 	
+  margin: 0;
+  padding: 0;
+  
+}
+.dark div{
+  display: block;
+}
+
+.bgColorFooter{  
+  height: 2.3em;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.69);
+  padding: 14px;
+  border-top: 1px solid #565656;
+}
+.share{
+	position: absolute;
+	bottom: 0%;
+}
+.body{
+  margin-right: -25px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h2.logotext{
+  margin: 0;
+  padding: 7px 0px 8px 0px;
+}
+
+.header{
+    width: 100%;
+    /*background-color: red;*/
+    overflow: hidden;
+    
+  }
+  .ad-logo{
+    display: inline-block;
+    padding: 0px;
+
+  }
+
+  #logo{
+    background-color: #fff;
+    width: 231px;
+    height: 60px;
+    margin-left: 5px;
+  }
+  #head-ad{
+    background: url('http://www.ksbiz.com/default_234x60_blue.gif');
+    width: 234px;
+    height: 60px;
+    margin: 5px 5px 5px 5px;
+    float: right;
+  }
+  #tfara_logo{
+    text-shadow: #ccc 0 0 4px, #ccc -2px 2px 5px; 
+    font-size: 40px; 
+    color: rgb(28, 147, 111); 
+    font-family: 'Exo 2', sans-serif;
+  }
+
+  #slides_logo{
+    color: rgb(57, 107, 149); 
+    font-family: 'Pacifico', cursive; 
+    font-size:19px; 
+    font-weight: 900; 
+    text-shadow: #ccc 0 0 4px, #ccc -2px 2px 5px;
+  }
+
+  div.dark{
+      height: 100%;
+    }
+   /*div.divs{
+    
+    height: -moz-calc(100% - 100px);
+    
+    height: -webkit-calc(100% - 100px);
+    
+    height: -o-calc(100% - 100px);
+    
+    height: calc(100% - 100px);
+    }*/
+
+/*---------------landscape-alert styling----------------------------*/
+#outer {
+    display: none;
+    margin: 0 auto;
+    background-color: #1C936F;
+    width: 65%;
+    height: 65% ;
+    position: fixed;
+    bottom: 10%;  
+    margin: 0 auto; 
+    z-index: 2002;
+    border: 0.5em solid #1C936F;
+    border-radius: 1em/7em;
+}
+#inner{
+    color: white;
+    font-family: verdana;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    width: 96%;
+    margin-left:  2%;  
+    margin-right:  2%;  
+    font-size: 0.55em;
+    line-height: 1em;
+    position: absolute;
+    top: 2%;
+
+}
+#overlay_bg{
+  cursor:pointer;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0.9;
+  z-index: 2001;
+
+}
+#landscape_img{
+  height: auto;
+  width: 100%;
+  margin: 0;
+  /*border: 0.2em solid black;*/
+}
+
+#alert_OK_button{
+  padding-top: 3%;
+  /*width: 45%;*/
+  margin: 0 auto;
+  color: white;
+  background-color: #1C936F; 
+  border: 0.5em solid white;
+  font-size: 0.9em;
+  border-radius: 10em/1em;
+}
+#alert_OK_button:hover{
+  cursor:pointer;
+  background-color: white;
+  color: #1C936F;
+}
+/*-----------landscape-alert styling ends here------------------*/
+/*----------------below two media queries are only for setting max-height of header class and 
+  rest are for both (demension of head-ad and max-height for header class)-------------------*/
+  @media screen and (min-width: 246px) and (max-width: 479px){ /*for iphone 4('320'x480) — potrait*/
+    #logo{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .header{
+      max-height: 130px;
+    }
+    /*div.divs{
+      height: -moz-calc(100% - 130px);
+      height: -webkit-calc(100% - 130px);
+      height: -o-calc(100% - 130px);
+      height: calc(100% - 130px);
+    }*/
+  }
+  @media screen and (min-width: 480px) and (max-width: 565px) { /*for iphone 4(320x'480') — landscape*/
+    #logo{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .header{
+      max-height: 70px; /*because div#head-ad has top and bottom margin of 10px(5+5) combined*/
+    }
+    #logo{
+      margin-top: 5px;
+    }
+    /*div.divs{
+      height: -moz-calc(100% - 70px);
+      height: -webkit-calc(100% - 70px);
+      height: -o-calc(100% - 70px);
+      height: calc(100% - 70px);
+    }*/
+  }
+
+  @media screen and (max-width: 245px){ /*for mobile resolution less than 246px*/
+    #logo{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    #head-ad{
+      display: none; /*because no ad available for this resolution*/
+    }
+    .header{
+      max-height: 60px; /*because ad - div has been removed*/
+    }
+  /*  div.divs{
+      height: -moz-calc(100% - 60px);
+      height: -webkit-calc(100% - 60px);
+      height: -o-calc(100% - 60px);
+      height: calc(100% - 60px);
+    }*/
+  } 
+
+  /*@media screen and (max-aspect-ratio: 11/16){
+    div.divs{
+    height: 60%;
+    }
+  }*/
+
+  @media screen and (min-width: 246px) and (max-width: 565px){ /*for iphone 4(320x'480') — landscape*/
+    #head-ad{
+      width: 234px;
+      height: 60px;
+      background: url('http://www.ksbiz.com/default_234x60_blue.gif'); /*remove this when you will place the ad*/
+    }
+     
+
+  }
+
+  @media screen and (min-width: 566px) and (max-width: 713px){ /*for iphone 5(320x'568') and 6(375x'667') — landscape*/ 
+    #logo{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    #head-ad{
+      width: 320px;
+      height: 50px;
+      background: url('http://quickbanners.adwingate.com/preview/711f6315-ca83-4bf5-9188-3d5c66f5e2bb-0.png'); /*remove this when you will place the ad*/
+    }
+    .header{
+      max-height: 60px;
+    }
+  /*  div.divs{
+      height: -moz-calc(100% - 60px);
+      height: -webkit-calc(100% - 60px);
+      height: -o-calc(100% - 60px);
+      height: calc(100% - 60px);
+    }*/
+
+  }
+
+  @media screen and (min-width: 714px) and (max-width: 973px){ /*this range is suitable for 468x60 ad*/
+    #logo{
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    #head-ad{
+      width: 468px;
+      height: 60px;
+      background: url('http://www.nhlbi.nih.gov/health/educational/wecan/images/20110510-WeCan_webAd-468x60-B.jpg'); /*remove this when you will place the ad*/
+
+    }
+    .header{
+      max-height: 70px; /*div#head-ad  has margin top and bottom of 10px combined */
+    }
+    
+  /*  div.divs{
+      height: -moz-calc(100% - 70px);
+      height: -webkit-calc(100% - 70px);
+      height: -o-calc(100% - 70px);
+      height: calc(100% - 70px);
+    }*/
+
+  }
+  
+  @media screen and (min-width: 974px) and (max-width: 1215px){
+    #head-ad{
+      width: 728px;
+      height: 90px;
+      background: url('http://www.shakeout.org/2008/downloads/ShakeOut_BannerAds_GetReady_728x90_v3.gif'); /*remove this when you will place the ad*/
+
+    }
+    .header{
+      max-height: 100px;
+    }
+    #logo{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1216px){
+    #head-ad{
+      width: 970px;
+      height: 90px;
+      background: url('http://cdn.assets.craveonline.com/__usa/tnt_falling_skies_season_1_dvd/overlay/_buildout/r02b01/970x90/tnt_falling_skies_season1_dvd_overlay_970x90_pre.jpg'); /*remove this when you will place the ad*/
+    }
+    .header{
+      max-height: 100px;
+    }
+    #logo{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }

@@ -1,0 +1,10 @@
+#preview_hover{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 15%;
+	height:25%;
+	background: url("../image/previewhover.png");
+	background-size: 100% 100%; 
+	background-position: center center;
+}

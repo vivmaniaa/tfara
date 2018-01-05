@@ -1,0 +1,108 @@
+nav a {
+	position: absolute;
+	top: 50%;
+	display: block;
+	outline: none;
+	text-align: left;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+nav a.prev {
+	left: -1em;
+}
+
+nav a.next {
+	right: -1em;
+}
+
+nav a svg {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Individual styles */
+
+/*--------------------*/
+/* Rounded slide */
+/*--------------------*/
+.color-4 { background-color: #566473; }
+
+.nav-roundslide a {
+    margin: -2em 1.666666667em;
+    padding: 0.85em;
+    width: 4.166667em;
+    height: 4.166667em;
+    border: 0.2em solid #566473;
+    border-radius: 3.333333333em;
+    background: #1E2D3D;
+    -webkit-transition: width 0.3s, background-color 0.3s;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.nav-roundslide .icon-wrap {
+    position: absolute;
+    top: 0.65em;
+    width: 2.666666667em;
+}
+
+.nav-roundslide a.prev .icon-wrap {
+	left: 1.3em;
+}
+
+.nav-roundslide a.next .icon-wrap {
+    right: 1.3em;
+}
+
+.nav-roundslide svg.icon {
+	fill: #566473;
+	width: 2.666666667em;
+	height: 2.666666667em;
+}
+
+.nav-roundslide h3 {
+    position: absolute;
+    top: -1.6em;
+    margin: 1em;
+    color: #566473;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 0.083333333em;
+    font-weight: 400;
+    font-size: 1.08em;
+    line-height: 5.043333371em;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-roundslide a.prev h3 {
+	right: 1em;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.nav-roundslide a.next h3 {
+	left: 1.666666667em;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.nav-roundslide a:hover {
+	width: 16.66666667em;
+	background: #fff;
+}
+.nav-roundslide a.next:hover {
+	width: 15.41666667em;
+	background: #fff;
+}
+
+.nav-roundslide a:hover h3 {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
